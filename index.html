@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>Tic Tac Toe</h1>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+
+            <div class="score-card">
+                <h3>Player X</h3>
+                <span id="scoreX">0</span>
+            </div>
+
+            <div class="score-card">
+                <h3>Draw</h3>
+                <span id="scoreDraw">0</span>
+            </div>
+
+            <div class="score-card">
+                <h3>Player O</h3>
+                <span id="scoreO">0</span>
+            </div>
+
+        </div>
+
+        <!-- Status -->
+        <div id="status" class="status">
+            Player X's Turn
+        </div>
+
+        <!-- Game Board -->
+        <div class="board">
+
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="restartBtn">
+                Restart
+            </button>
+
+            <button id="resetScoreBtn">
+                Reset Score
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Winner Popup -->
+    <div class="popup" id="popup">
+
+        <div class="popup-card">
+
+            <div class="emoji" id="popupEmoji">
+                🎉
+            </div>
+
+            <h2 id="popupTitle">
+                Player X Wins!
+            </h2>
+
+            <p id="popupMessage">
+                Congratulations!
+            </p>
+
+            <button id="newGameBtn">
+                New Game
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Confetti -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
